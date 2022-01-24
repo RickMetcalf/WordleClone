@@ -16,9 +16,12 @@ namespace MSSAWordle
         private Random rand = new Random();
         private int CurrentOffset = 1;
         private string CurrentWord = string.Empty;
-        private const string WORD_FILE_PATH = @"C:\MGS\blgorman_github\IntroToProgramming\WordleClone\MSSAWordle\MSSAWordle\WordsForWordle.txt";
+        private const string WORD_FILE_PATH = @"C:\Users\rmetc\source\repos\TestRepo\WordleClone\MSSAWordle\WordsForWordle.txt";
         private List<string> WordList = new List<string>();
         private List<TextBox> currentBoxes = new List<TextBox>();
+
+        public static string WORD_FILE_PATH1 => WORD_FILE_PATH;
+
         public Form1()
         {
             InitializeComponent();
